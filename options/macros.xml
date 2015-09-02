@@ -2,8 +2,6 @@
   <component name="ActionMacroManager">
     <macro name="testmacro">
       <typing text-keycode="84:0;69:0;83:0;84:0">test</typing>
-      <action id="GotoAction" />
-      <shortuct text="ENTER" />
     </macro>
   </component>
 </application>

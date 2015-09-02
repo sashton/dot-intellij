@@ -93,7 +93,15 @@
   <action id="ActivateREPLToolWindow">
     <keyboard-shortcut first-keystroke="alt M" />
   </action>
+  <action id="Back">
+    <keyboard-shortcut first-keystroke="control alt LEFT" />
+    <keyboard-shortcut first-keystroke="shift alt LEFT" />
+  </action>
+  <action id="CheckinProject" />
   <action id="Diff.ShowSettingsPopup" />
+  <action id="EditMacros">
+    <keyboard-shortcut first-keystroke="control M" second-keystroke="E" />
+  </action>
   <action id="EditorDeleteLine">
     <keyboard-shortcut first-keystroke="control Y" />
     <keyboard-shortcut first-keystroke="shift control D" />
@@ -101,6 +109,10 @@
   <action id="EditorDown">
     <keyboard-shortcut first-keystroke="DOWN" />
     <keyboard-shortcut first-keystroke="alt K" />
+  </action>
+  <action id="EditorDuplicate" />
+  <action id="EditorDuplicateLines">
+    <keyboard-shortcut first-keystroke="control D" />
   </action>
   <action id="EditorLeft">
     <keyboard-shortcut first-keystroke="LEFT" />
@@ -110,13 +122,30 @@
     <keyboard-shortcut first-keystroke="RIGHT" />
     <keyboard-shortcut first-keystroke="alt L" />
   </action>
+  <action id="EditorScrollToCenter" />
   <action id="EditorUp">
     <keyboard-shortcut first-keystroke="UP" />
     <keyboard-shortcut first-keystroke="alt I" />
   </action>
   <action id="ExportToTextFile" />
+  <action id="ImplementMethods" />
+  <action id="Macro.testmacro">
+    <keyboard-shortcut first-keystroke="control M" second-keystroke="1" />
+  </action>
+  <action id="NextSplitter">
+    <keyboard-shortcut first-keystroke="control K" second-keystroke="W" />
+  </action>
+  <action id="PlaySavedMacrosAction">
+    <keyboard-shortcut first-keystroke="control M" second-keystroke="P" />
+  </action>
+  <action id="PlaybackLastMacro">
+    <keyboard-shortcut first-keystroke="control M" second-keystroke="control COMMA" />
+  </action>
   <action id="SelectNextOccurrence">
     <keyboard-shortcut first-keystroke="alt O" />
+  </action>
+  <action id="StartStopMacroRecording">
+    <keyboard-shortcut first-keystroke="control M" second-keystroke="S" />
   </action>
   <action id="SwitchApply">
     <keyboard-shortcut first-keystroke="shift alt ENTER" />
@@ -132,5 +161,8 @@
   </action>
   <action id="SwitchUp">
     <keyboard-shortcut first-keystroke="shift alt UP" />
+  </action>
+  <action id="Vcs.ShowMessageHistory">
+    <keyboard-shortcut first-keystroke="control E" />
   </action>
 </keymap>
