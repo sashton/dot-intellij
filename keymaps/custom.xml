@@ -90,6 +90,15 @@
   <action id=":cursive.testing.actions/remove-test-markers">
     <keyboard-shortcut first-keystroke="shift control BACK_SPACE" />
   </action>
+  <action id=":cursive.testing.actions/rerun-last-test">
+    <keyboard-shortcut first-keystroke="control T" second-keystroke="control R" />
+  </action>
+  <action id=":cursive.testing.actions/run-ns-tests">
+    <keyboard-shortcut first-keystroke="control T" second-keystroke="control N" />
+  </action>
+  <action id=":cursive.testing.actions/run-single-test">
+    <keyboard-shortcut first-keystroke="control T" second-keystroke="control T" />
+  </action>
   <action id="AceJumpAction">
     <keyboard-shortcut first-keystroke="control SEMICOLON" />
     <keyboard-shortcut first-keystroke="alt SEMICOLON" />
@@ -113,6 +122,12 @@
     <keyboard-shortcut first-keystroke="BACK_SPACE" />
     <keyboard-shortcut first-keystroke="shift BACK_SPACE" />
     <keyboard-shortcut first-keystroke="alt D" />
+  </action>
+  <action id="EditorCloneCaretAbove">
+    <keyboard-shortcut first-keystroke="control K" second-keystroke="control I" />
+  </action>
+  <action id="EditorCloneCaretBelow">
+    <keyboard-shortcut first-keystroke="control K" second-keystroke="control K" />
   </action>
   <action id="EditorDeleteLine">
     <keyboard-shortcut first-keystroke="control Y" />
@@ -177,4 +192,5 @@
   <action id="Vcs.ShowMessageHistory">
     <keyboard-shortcut first-keystroke="control E" />
   </action>
+  <action id="Vcs.UpdateProject" />
 </keymap>
