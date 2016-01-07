@@ -5,6 +5,7 @@
   </action>
   <action id=":cursive.actions.paredit/backward">
     <keyboard-shortcut first-keystroke="ctrl left" />
+    <keyboard-shortcut first-keystroke="ctrl alt j" />
   </action>
   <action id=":cursive.actions.paredit/barf-backwards">
     <keyboard-shortcut first-keystroke="ctrl meta k" />
@@ -80,6 +81,7 @@
   </action>
   <action id=":cursive.repl.actions/run-top-sexp">
     <keyboard-shortcut first-keystroke="shift ctrl p" />
+    <keyboard-shortcut first-keystroke="ctrl enter" />
   </action>
   <action id=":cursive.repl.actions/search-history">
     <keyboard-shortcut first-keystroke="ctrl alt e" />
@@ -124,10 +126,10 @@
     <keyboard-shortcut first-keystroke="alt d" />
   </action>
   <action id="EditorCloneCaretAbove">
-    <keyboard-shortcut first-keystroke="ctrl k" second-keystroke="ctrl i" />
+    <keyboard-shortcut first-keystroke="alt y" />
   </action>
   <action id="EditorCloneCaretBelow">
-    <keyboard-shortcut first-keystroke="ctrl k" second-keystroke="ctrl k" />
+    <keyboard-shortcut first-keystroke="alt h" />
   </action>
   <action id="EditorDeleteLine">
     <keyboard-shortcut first-keystroke="ctrl y" />
@@ -150,11 +152,28 @@
     <keyboard-shortcut first-keystroke="alt l" />
   </action>
   <action id="EditorScrollToCenter" />
+  <action id="EditorSelectWord">
+    <keyboard-shortcut first-keystroke="ctrl w" />
+    <keyboard-shortcut first-keystroke="alt u" />
+  </action>
+  <action id="EditorUnSelectWord">
+    <keyboard-shortcut first-keystroke="shift ctrl w" />
+    <keyboard-shortcut first-keystroke="ctrl alt u" />
+  </action>
   <action id="EditorUp">
     <keyboard-shortcut first-keystroke="up" />
     <keyboard-shortcut first-keystroke="alt i" />
   </action>
   <action id="ExportToTextFile" />
+  <action id="FindNext">
+    <keyboard-shortcut first-keystroke="f3" />
+  </action>
+  <action id="Git.CompareWithBranch">
+    <keyboard-shortcut first-keystroke="ctrl g" second-keystroke="ctrl o" />
+  </action>
+  <action id="GotoLine">
+    <keyboard-shortcut first-keystroke="ctrl l" />
+  </action>
   <action id="ImplementMethods" />
   <action id="Macro.delete-extended-selection">
     <keyboard-shortcut first-keystroke="shift alt d" />
@@ -174,6 +193,7 @@
   <action id="StartStopMacroRecording">
     <keyboard-shortcut first-keystroke="ctrl m" second-keystroke="s" />
   </action>
+  <action id="SurroundWithLiveTemplate" />
   <action id="SwitchApply">
     <keyboard-shortcut first-keystroke="shift alt enter" />
   </action>
