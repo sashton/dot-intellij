@@ -1,4 +1,14 @@
 *
+!.gitignore
+
+!keymaps/
+keymaps/*
 !keymaps/custom.xml
+
+!options/
+options/*
 !options/macros.xml
 
+!colors
+colors/*
+!colors/DarculaCopy.icls
