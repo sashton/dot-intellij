@@ -299,6 +299,16 @@
         <option name="FOREGROUND" value="6a8759" />
       </value>
     </option>
+    <option name="DEFAULT_TAG">
+      <value>
+        <option name="BACKGROUND" value="161616" />
+      </value>
+    </option>
+    <option name="DEFAULT_TEMPLATE_LANGUAGE_COLOR">
+      <value>
+        <option name="BACKGROUND" value="161616" />
+      </value>
+    </option>
     <option name="DEFAULT_VALID_STRING_ESCAPE">
       <value>
         <option name="FOREGROUND" value="cc7832" />

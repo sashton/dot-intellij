@@ -5,13 +5,19 @@
   </action>
   <action id=":cursive.actions.paredit/backward">
     <keyboard-shortcut first-keystroke="ctrl left" />
-    <keyboard-shortcut first-keystroke="ctrl alt j" />
+    <keyboard-shortcut first-keystroke="shift alt j" />
+  </action>
+  <action id=":cursive.actions.paredit/backward-down">
+    <keyboard-shortcut first-keystroke="shift alt comma" />
+  </action>
+  <action id=":cursive.actions.paredit/backward-up">
+    <keyboard-shortcut first-keystroke="shift alt m" />
   </action>
   <action id=":cursive.actions.paredit/barf-backwards">
-    <keyboard-shortcut first-keystroke="ctrl meta k" />
+    <keyboard-shortcut first-keystroke="shift alt i" />
   </action>
   <action id=":cursive.actions.paredit/barf-forwards">
-    <keyboard-shortcut first-keystroke="shift ctrl j" />
+    <keyboard-shortcut first-keystroke="shift alt o" />
   </action>
   <action id=":cursive.actions.paredit/close-curly-and-newline">
     <keyboard-shortcut first-keystroke="shift ctrl close_bracket" />
@@ -27,6 +33,13 @@
   </action>
   <action id=":cursive.actions.paredit/forward">
     <keyboard-shortcut first-keystroke="ctrl right" />
+    <keyboard-shortcut first-keystroke="shift alt l" />
+  </action>
+  <action id=":cursive.actions.paredit/forward-down">
+    <keyboard-shortcut first-keystroke="shift alt period" />
+  </action>
+  <action id=":cursive.actions.paredit/forward-up">
+    <keyboard-shortcut first-keystroke="shift alt slash" />
   </action>
   <action id=":cursive.actions.paredit/join">
     <keyboard-shortcut first-keystroke="ctrl meta s" />
@@ -44,10 +57,10 @@
     <keyboard-shortcut first-keystroke="ctrl quote" />
   </action>
   <action id=":cursive.actions.paredit/slurp-backwards">
-    <keyboard-shortcut first-keystroke="ctrl meta j" />
+    <keyboard-shortcut first-keystroke="shift alt u" />
   </action>
   <action id=":cursive.actions.paredit/slurp-forwards">
-    <keyboard-shortcut first-keystroke="shift ctrl k" />
+    <keyboard-shortcut first-keystroke="shift alt p" />
   </action>
   <action id=":cursive.actions.paredit/splice">
     <keyboard-shortcut first-keystroke="alt s" />
@@ -113,6 +126,11 @@
     <keyboard-shortcut first-keystroke="shift alt left" />
   </action>
   <action id="CheckinProject" />
+  <action id="CloseContent">
+    <keyboard-shortcut first-keystroke="ctrl f4" />
+    <keyboard-shortcut first-keystroke="ctrl k" second-keystroke="ctrl c" />
+  </action>
+  <action id="CodeInspection.OnEditor" />
   <action id="Diff.ShowSettingsPopup" />
   <action id="EditMacros">
     <keyboard-shortcut first-keystroke="ctrl m" second-keystroke="e" />
@@ -174,9 +192,16 @@
   <action id="GotoLine">
     <keyboard-shortcut first-keystroke="ctrl l" />
   </action>
+  <action id="HippieBackwardCompletion" />
   <action id="ImplementMethods" />
   <action id="Macro.delete-extended-selection">
     <keyboard-shortcut first-keystroke="shift alt d" />
+  </action>
+  <action id="MoveTabDown">
+    <keyboard-shortcut first-keystroke="ctrl k" second-keystroke="ctrl d" />
+  </action>
+  <action id="MoveTabRight">
+    <keyboard-shortcut first-keystroke="ctrl k" second-keystroke="ctrl r" />
   </action>
   <action id="NextSplitter">
     <keyboard-shortcut first-keystroke="ctrl k" second-keystroke="w" />
@@ -209,6 +234,7 @@
   <action id="SwitchUp">
     <keyboard-shortcut first-keystroke="shift alt up" />
   </action>
+  <action id="UnselectPreviousOccurrence" />
   <action id="Vcs.ShowMessageHistory">
     <keyboard-shortcut first-keystroke="ctrl e" />
   </action>
