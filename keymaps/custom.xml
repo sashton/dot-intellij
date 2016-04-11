@@ -124,6 +124,7 @@
   <action id="Back">
     <keyboard-shortcut first-keystroke="ctrl alt left" />
     <keyboard-shortcut first-keystroke="shift alt left" />
+    <keyboard-shortcut first-keystroke="shift ctrl comma" />
   </action>
   <action id="CheckinProject" />
   <action id="CloseContent">
@@ -131,6 +132,8 @@
     <keyboard-shortcut first-keystroke="ctrl k" second-keystroke="ctrl c" />
   </action>
   <action id="CodeInspection.OnEditor" />
+  <action id="CollapseBlock" />
+  <action id="CollapseSelection" />
   <action id="Diff.ShowSettingsPopup" />
   <action id="EditMacros">
     <keyboard-shortcut first-keystroke="ctrl m" second-keystroke="e" />
@@ -143,6 +146,7 @@
     <keyboard-shortcut first-keystroke="shift back_space" />
     <keyboard-shortcut first-keystroke="alt d" />
   </action>
+  <action id="EditorChooseLookupItemDot" />
   <action id="EditorCloneCaretAbove">
     <keyboard-shortcut first-keystroke="alt y" />
   </action>
@@ -186,14 +190,31 @@
   <action id="FindNext">
     <keyboard-shortcut first-keystroke="f3" />
   </action>
+  <action id="Forward">
+    <keyboard-shortcut first-keystroke="ctrl alt right" />
+    <mouse-shortcut keystroke="button5" />
+    <keyboard-shortcut first-keystroke="shift ctrl period" />
+  </action>
   <action id="Git.CompareWithBranch">
     <keyboard-shortcut first-keystroke="ctrl g" second-keystroke="ctrl o" />
+  </action>
+  <action id="GotoDeclaration">
+    <keyboard-shortcut first-keystroke="ctrl b" />
+    <mouse-shortcut keystroke="control button1" />
+    <keyboard-shortcut first-keystroke="ctrl period" />
   </action>
   <action id="GotoLine">
     <keyboard-shortcut first-keystroke="ctrl l" />
   </action>
   <action id="HippieBackwardCompletion" />
   <action id="ImplementMethods" />
+  <action id="JumpToLastChange">
+    <keyboard-shortcut first-keystroke="shift ctrl back_space" />
+    <keyboard-shortcut first-keystroke="shift ctrl alt comma" />
+  </action>
+  <action id="JumpToNextChange">
+    <keyboard-shortcut first-keystroke="shift ctrl alt period" />
+  </action>
   <action id="Macro.delete-extended-selection">
     <keyboard-shortcut first-keystroke="shift alt d" />
   </action>
