@@ -1,4 +1,4 @@
-<keymap version="1" name="custom" parent="Default for XWin">
+<keymap version="1" name="custom-mac" parent="Mac OS X">
   <action id=":cursive.actions.paredit/backward">
     <keyboard-shortcut first-keystroke="shift alt j" />
   </action>
@@ -14,7 +14,7 @@
   <action id=":cursive.actions.paredit/barf-forwards">
     <keyboard-shortcut first-keystroke="shift alt o" />
   </action>
-  <action id=":cursive.actions.paredit/copy-as-kill"/>
+  <action id=":cursive.actions.paredit/copy-as-kill" />
   <action id=":cursive.actions.paredit/forward">
     <keyboard-shortcut first-keystroke="shift alt l" />
   </action>
@@ -24,12 +24,12 @@
   <action id=":cursive.actions.paredit/forward-up">
     <keyboard-shortcut first-keystroke="shift alt slash" />
   </action>
-  <action id=":cursive.actions.paredit/join"/>
-  <action id=":cursive.actions.paredit/kill-sexp"/>
-  <action id=":cursive.actions.paredit/move-form-down"/>
-  <action id=":cursive.actions.paredit/move-form-up"/>
+  <action id=":cursive.actions.paredit/join" />
+  <action id=":cursive.actions.paredit/kill-sexp" />
+  <action id=":cursive.actions.paredit/move-form-down" />
+  <action id=":cursive.actions.paredit/move-form-up" />
   <action id=":cursive.actions.paredit/raise">
-    <keyboard-shortcut first-keystroke="ctrl quote" />
+    <keyboard-shortcut first-keystroke="meta quote" />
   </action>
   <action id=":cursive.actions.paredit/slurp-backwards">
     <keyboard-shortcut first-keystroke="shift alt u" />
@@ -43,86 +43,90 @@
   <action id=":cursive.actions.paredit/split">
     <keyboard-shortcut first-keystroke="shift alt s" />
   </action>
-  <action id=":cursive.actions.paredit/thread-form"/>
-  <action id=":cursive.actions.paredit/unthread-form"/>
+  <action id=":cursive.actions.paredit/thread-form" />
+  <action id=":cursive.actions.paredit/unthread-form" />
   <action id=":cursive.actions.paredit/wrap-curly">
-    <keyboard-shortcut first-keystroke="shift ctrl open_bracket" />
+    <keyboard-shortcut first-keystroke="shift meta open_bracket" />
   </action>
   <action id=":cursive.actions.paredit/wrap-paren">
-    <keyboard-shortcut first-keystroke="shift ctrl 9" />
+    <keyboard-shortcut first-keystroke="shift meta 9" />
   </action>
   <action id=":cursive.actions.paredit/wrap-quotes">
-    <keyboard-shortcut first-keystroke="shift ctrl quote" />
+    <keyboard-shortcut first-keystroke="shift meta quote" />
   </action>
   <action id=":cursive.actions.paredit/wrap-square">
-    <keyboard-shortcut first-keystroke="ctrl open_bracket" />
+    <keyboard-shortcut first-keystroke="meta open_bracket" />
   </action>
   <action id=":cursive.repl.actions/clear-repl">
-    <keyboard-shortcut first-keystroke="ctrl u" second-keystroke="ctrl d" />
+    <keyboard-shortcut first-keystroke="meta u" second-keystroke="meta d" />
   </action>
   <action id=":cursive.repl.actions/execute-immediately">
-    <keyboard-shortcut first-keystroke="ctrl enter" />
-    <keyboard-shortcut first-keystroke="ctrl u" second-keystroke="ctrl u" />
+    <keyboard-shortcut first-keystroke="meta enter" />
+    <keyboard-shortcut first-keystroke="meta u" second-keystroke="meta u" />
   </action>
   <action id=":cursive.repl.actions/load-file">
-    <keyboard-shortcut first-keystroke="ctrl u" second-keystroke="ctrl l" />
+    <keyboard-shortcut first-keystroke="meta u" second-keystroke="meta l" />
   </action>
   <action id=":cursive.repl.actions/macroexpansion">
-    <keyboard-shortcut first-keystroke="ctrl u" second-keystroke="ctrl x" />
+    <keyboard-shortcut first-keystroke="meta u" second-keystroke="meta x" />
   </action>
   <action id=":cursive.repl.actions/print-exception">
-    <keyboard-shortcut first-keystroke="ctrl u" second-keystroke="ctrl e" />
+    <keyboard-shortcut first-keystroke="meta u" second-keystroke="meta e" />
   </action>
   <action id=":cursive.repl.actions/run-last-sexp">
-    <keyboard-shortcut first-keystroke="ctrl u" second-keystroke="ctrl y" />
+    <keyboard-shortcut first-keystroke="meta u" second-keystroke="meta y" />
   </action>
   <action id=":cursive.repl.actions/run-top-sexp">
-    <keyboard-shortcut first-keystroke="ctrl enter" />
-    <keyboard-shortcut first-keystroke="ctrl u" second-keystroke="ctrl u" />
+    <keyboard-shortcut first-keystroke="meta enter" />
+    <keyboard-shortcut first-keystroke="meta u" second-keystroke="meta u" />
   </action>
   <action id=":cursive.repl.actions/search-history">
     <keyboard-shortcut first-keystroke="ctrl alt e" />
   </action>
   <action id=":cursive.repl.actions/switch-namespace">
-    <keyboard-shortcut first-keystroke="ctrl u" second-keystroke="ctrl c" />
+    <keyboard-shortcut first-keystroke="meta u" second-keystroke="meta c" />
   </action>
   <action id=":cursive.repl.actions/sync-files">
-    <keyboard-shortcut first-keystroke="ctrl u" second-keystroke="ctrl s" />
+    <keyboard-shortcut first-keystroke="meta u" second-keystroke="meta s" />
   </action>
   <action id=":cursive.testing.actions/remove-test-markers">
     <keyboard-shortcut first-keystroke="shift ctrl back_space" />
   </action>
   <action id=":cursive.testing.actions/rerun-last-test">
-    <keyboard-shortcut first-keystroke="ctrl u" second-keystroke="ctrl r" />
+    <keyboard-shortcut first-keystroke="meta u" second-keystroke="meta r" />
   </action>
   <action id=":cursive.testing.actions/run-ns-tests">
-    <keyboard-shortcut first-keystroke="ctrl u" second-keystroke="ctrl n" />
+    <keyboard-shortcut first-keystroke="meta u" second-keystroke="meta n" />
   </action>
   <action id=":cursive.testing.actions/run-single-test">
-    <keyboard-shortcut first-keystroke="ctrl u" second-keystroke="ctrl t" />
+    <keyboard-shortcut first-keystroke="meta u" second-keystroke="meta t" />
   </action>
   <action id="AceJumpAction">
-    <keyboard-shortcut first-keystroke="ctrl semicolon" />
+    <keyboard-shortcut first-keystroke="meta semicolon" />
   </action>
   <action id="ActivateREPLToolWindow">
-    <keyboard-shortcut first-keystroke="ctrl u" second-keystroke="ctrl k" />
+    <keyboard-shortcut first-keystroke="meta u" second-keystroke="meta k" />
+  </action>
+  <action id="ActivateVersionControlToolWindow">
+    <keyboard-shortcut first-keystroke="meta 9" />
   </action>
   <action id="Annotate">
-    <keyboard-shortcut first-keystroke="ctrl g" second-keystroke="ctrl a" />
+    <keyboard-shortcut first-keystroke="meta g" second-keystroke="meta a" />
   </action>
   <action id="Back">
-    <keyboard-shortcut first-keystroke="shift ctrl comma" />
+    <keyboard-shortcut first-keystroke="shift meta comma" />
   </action>
   <action id="CheckinProject" />
   <action id="CloseContent">
-    <keyboard-shortcut first-keystroke="ctrl k" second-keystroke="ctrl c" />
+    <keyboard-shortcut first-keystroke="meta k" second-keystroke="meta c" />
   </action>
   <action id="CodeInspection.OnEditor" />
   <action id="CollapseBlock" />
   <action id="CollapseSelection" />
+  <action id="Console.Execute.Multiline" />
   <action id="Diff.ShowSettingsPopup" />
   <action id="EditMacros">
-    <keyboard-shortcut first-keystroke="ctrl m" second-keystroke="e" />
+    <keyboard-shortcut first-keystroke="meta m" second-keystroke="e" />
   </action>
   <action id="Editor Delete">
     <keyboard-shortcut first-keystroke="alt f" />
@@ -139,8 +143,13 @@
   <action id="EditorCloneCaretBelow">
     <keyboard-shortcut first-keystroke="alt h" />
   </action>
+  <action id="EditorCodeBlockStart" />
+  <action id="EditorCodeBlockStartWithSelection" />
+  <action id="EditorDelete">
+    <keyboard-shortcut first-keystroke="delete" />
+  </action>
   <action id="EditorDeleteLine">
-    <keyboard-shortcut first-keystroke="shift ctrl d" />
+    <keyboard-shortcut first-keystroke="shift meta d" />
   </action>
   <action id="EditorDown">
     <keyboard-shortcut first-keystroke="down" />
@@ -160,59 +169,66 @@
   </action>
   <action id="EditorScrollToCenter" />
   <action id="EditorSelectWord">
-    <keyboard-shortcut first-keystroke="ctrl equals" />
+    <keyboard-shortcut first-keystroke="meta equals" />
   </action>
+  <action id="EditorSplitLine" />
   <action id="EditorUnSelectWord">
-    <keyboard-shortcut first-keystroke="ctrl minus" />
+    <keyboard-shortcut first-keystroke="meta minus" />
   </action>
   <action id="EditorUp">
     <keyboard-shortcut first-keystroke="up" />
     <keyboard-shortcut first-keystroke="alt i" />
   </action>
+  <action id="Exit" />
   <action id="ExportToTextFile" />
   <action id="FindNext">
     <keyboard-shortcut first-keystroke="f3" />
   </action>
   <action id="Forward">
-    <keyboard-shortcut first-keystroke="shift ctrl period" />
+    <keyboard-shortcut first-keystroke="shift meta period" />
   </action>
   <action id="Git.CompareWithBranch">
-    <keyboard-shortcut first-keystroke="ctrl g" second-keystroke="ctrl o" />
+    <keyboard-shortcut first-keystroke="meta g" second-keystroke="meta o" />
   </action>
   <action id="GotoDeclaration">
-    <keyboard-shortcut first-keystroke="ctrl b" />
-    <mouse-shortcut keystroke="control button1" />
+    <keyboard-shortcut first-keystroke="meta b" />
+    <mouse-shortcut keystroke="meta button1" />
   </action>
   <action id="GotoLine">
-    <keyboard-shortcut first-keystroke="ctrl l" />
+    <keyboard-shortcut first-keystroke="meta l" />
   </action>
+  <action id="GotoSuperMethod" />
   <action id="HippieBackwardCompletion" />
   <action id="ImplementMethods" />
-  <action id="JumpToLastChange"/>
-  <action id="JumpToNextChange"/>
+  <action id="JumpToLastChange" />
   <action id="Macro.delete-extended-selection">
     <keyboard-shortcut first-keystroke="shift alt d" />
   </action>
+  <action id="MaximizeToolWindow" />
   <action id="MoveTabDown">
-    <keyboard-shortcut first-keystroke="ctrl k" second-keystroke="ctrl d" />
+    <keyboard-shortcut first-keystroke="meta k" second-keystroke="meta d" />
   </action>
   <action id="MoveTabRight">
-    <keyboard-shortcut first-keystroke="ctrl k" second-keystroke="ctrl r" />
+    <keyboard-shortcut first-keystroke="meta k" second-keystroke="meta r" />
   </action>
   <action id="NextSplitter">
-    <keyboard-shortcut first-keystroke="ctrl k" second-keystroke="w" />
+    <keyboard-shortcut first-keystroke="meta k" second-keystroke="w" />
   </action>
   <action id="PlaySavedMacrosAction">
-    <keyboard-shortcut first-keystroke="ctrl m" second-keystroke="p" />
+    <keyboard-shortcut first-keystroke="meta m" second-keystroke="p" />
   </action>
   <action id="PlaybackLastMacro">
-    <keyboard-shortcut first-keystroke="ctrl m" second-keystroke="ctrl comma" />
+    <keyboard-shortcut first-keystroke="meta m" second-keystroke="meta comma" />
+  </action>
+  <action id="QuickJavaDoc">
+    <keyboard-shortcut first-keystroke="meta q" />
   </action>
   <action id="SelectNextOccurrence">
     <keyboard-shortcut first-keystroke="alt o" />
   </action>
+  <action id="ShowProjectStructureSettings" />
   <action id="StartStopMacroRecording">
-    <keyboard-shortcut first-keystroke="ctrl m" second-keystroke="s" />
+    <keyboard-shortcut first-keystroke="meta m" second-keystroke="s" />
   </action>
   <action id="SurroundWithLiveTemplate" />
   <action id="SwitchApply">
@@ -235,4 +251,6 @@
     <keyboard-shortcut first-keystroke="ctrl e" />
   </action>
   <action id="Vcs.UpdateProject" />
+  <action id="ViewSource" />
+  <action id="org.intellij.plugins.markdown.ui.actions.styling.ToggleBoldAction" />
 </keymap>

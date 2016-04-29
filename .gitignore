@@ -4,6 +4,7 @@
 !keymaps/
 keymaps/*
 !keymaps/custom.xml
+!keymaps/custom-mac.xml
 
 !options/
 options/*
