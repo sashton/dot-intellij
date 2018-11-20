@@ -1,0 +1,60 @@
+" <C-  ctrl
+" <S-  shift
+" <m-  meta/alt
+
+set clipboard+=unnamed
+set iskeyword+=-
+set ignorecase
+set smartcase
+
+let mapleader = " "
+
+inoremap fd <Esc>`^
+
+nnoremap <leader>vs :source ~/.ideavimrc<CR>
+nnoremap <leader>ve :e ~/.ideavimrc<CR>
+
+nnoremap . :action VimRepeatChange<CR>
+
+" Fix shift selecting
+inoremap <S-Left> <C-O>:action EditorLeftWithSelection<CR>
+inoremap <S-Right> <C-O>:action EditorRightWithSelection<CR>
+inoremap <S-Up> <C-O>:action EditorUpWithSelection<CR>
+inoremap <S-Down> <C-O>:action EditorDownWithSelection<CR>
+
+vnoremap ] :action EditorSelectWord<CR>
+vnoremap [ :action EditorUnSelectWord<CR>
+
+nnoremap <leader>y :action EditorCopy<CR>
+nnoremap <leader>p :action EditorPaste<CR>
+
+nnoremap g, :action Back<CR>
+nnoremap g. :action Forward<CR>
+
+nmap <leader>fs :action SaveDocument<CR>
+nmap <leader>fr :action RecentFiles<CR>
+nmap <leader>fe :action RecentChangedFiles<CR>
+nnoremap <leader>ff :action GotoFile<CR>
+
+nmap <leader>ch :action Cursive.Repl.Command.hello command<CR>
+nnoremap <leader>cli :action Tool_External Tools_services-clean-install<CR>
+nnoremap <leader>rc" :action Macro.raise-current-sexp<CR>
+nnoremap <leader>rc' :action :cursive.actions.paredit/raise<CR>
+nnoremap <leader>rr :action RenameElement<CR>
+
+nnoremap <leader>su :action FindUsages<CR>
+nnoremap <leader>sd :action GotoDeclaration<CR>
+nnoremap <leader>ss :action FileStructurePopup<CR>
+
+nnoremap <leader>wc :action CloseEditor<CR>
+
+
+nnoremap <leader>crl :action :cursive.repl.actions/load-file<CR>
+nnoremap <leader>crc :action :cursive.repl.actions/clear-repl<CR>
+
+nnoremap <leader>ctn :action :cursive.testing.actions/run-ns-tests<CR>
+nnoremap <leader>ctt :action :cursive.testing.actions/run-single-test<CR>
+nnoremap <leader>ctr :action :cursive.testing.actions/rerun-last-test<CR>
+
+noremap <m-y> :action Cursive.Repl.Command.hello command<CR>
+
