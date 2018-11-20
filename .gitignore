@@ -13,4 +13,4 @@ options/*
 
 !colors
 colors/*
-!colors/DarculaCopy.icls
+!colors/*.icls

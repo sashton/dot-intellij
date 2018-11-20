@@ -1,0 +1,58 @@
+<scheme name="Darcula" version="142" parent_scheme="Darcula">
+  <metaInfo>
+    <property name="created">2018-11-20T16:07:53</property>
+    <property name="ide">Idea</property>
+    <property name="ideVersion">2018.2.6.0.0</property>
+    <property name="modified">2018-11-20T16:08:38</property>
+    <property name="originalScheme">_@user_Darcula</property>
+  </metaInfo>
+  <attributes>
+    <option name="Clojure Keyword">
+      <value>
+        <option name="FOREGROUND" value="5f90cb" />
+      </value>
+    </option>
+    <option name="Clojure Literal">
+      <value>
+        <option name="FOREGROUND" value="6897bb" />
+      </value>
+    </option>
+    <option name="DEFAULT_FUNCTION_DECLARATION">
+      <value>
+        <option name="FOREGROUND" value="c3b676" />
+      </value>
+    </option>
+    <option name="DEFAULT_IDENTIFIER">
+      <value>
+        <option name="BACKGROUND" value="2b2b2b" />
+        <option name="EFFECT_TYPE" value="5" />
+      </value>
+    </option>
+    <option name="DEFAULT_KEYWORD">
+      <value>
+        <option name="FOREGROUND" value="c3b676" />
+        <option name="FONT_TYPE" value="1" />
+      </value>
+    </option>
+    <option name="DEFAULT_STRING">
+      <value>
+        <option name="FOREGROUND" value="81a46c" />
+      </value>
+    </option>
+    <option name="Head symbol">
+      <value>
+        <option name="FOREGROUND" value="c5aa5f" />
+      </value>
+    </option>
+    <option name="Head symbol from clojure.core">
+      <value>
+        <option name="FOREGROUND" value="77adb5" />
+      </value>
+    </option>
+    <option name="Rainbow Parens Level 7">
+      <value>
+        <option name="FOREGROUND" value="368bff" />
+      </value>
+    </option>
+  </attributes>
+</scheme>
