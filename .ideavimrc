@@ -77,6 +77,7 @@ nnoremap <leader>ri :action ReformatCode<CR>
 nnoremap <leader>su :action FindUsages<CR>
 nnoremap <leader>sd :action GotoDeclaration<CR>
 nnoremap <leader>ss :action FileStructurePopup<CR>
+nnoremap <leader>se :action SearchEverywhere<cr>
 
 nnoremap <leader>wc :action CloseEditor<CR>
 
