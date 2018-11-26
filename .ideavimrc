@@ -6,13 +6,31 @@ set clipboard+=unnamed
 set iskeyword+=-
 set ignorecase
 set smartcase
+set backspace=indent,eol,start  " backspace over everything
 
 let mapleader = " "
 
-inoremap fd <Esc>`^
+inoremap fj <Esc>`^
+inoremap jf <Esc>`^
+vnoremap jf <Esc>
+vnoremap fj <Esc>
+"nnoremap fd <Esc>`^
 
 nnoremap <leader>vs :source ~/.ideavimrc<CR>
 nnoremap <leader>ve :e ~/.ideavimrc<CR>
+
+nnoremap <C-[> ?[{(\[\])}]<CR>
+vnoremap <C-[> ?[{(\[\])}]<CR>
+inoremap <C-[> x<C-c>"_x?[{(\[\])}]<CR>i
+nnoremap <C-]> /[{(\[\])}]<CR>
+vnoremap <C-]> /[{(\[\])}]<CR>
+inoremap <C-]> <Esc>/[{(\[\])}]<CR>a
+inoremap <C-i> <Esc>
+
+
+"Allow all window commands in insert mode without accidentally
+"deleting words
+imap <C-w> <C-o><C-w>
 
 nnoremap . :action VimRepeatChange<CR>
 
@@ -22,14 +40,26 @@ inoremap <S-Right> <C-O>:action EditorRightWithSelection<CR>
 inoremap <S-Up> <C-O>:action EditorUpWithSelection<CR>
 inoremap <S-Down> <C-O>:action EditorDownWithSelection<CR>
 
-vnoremap ] :action EditorSelectWord<CR>
-vnoremap [ :action EditorUnSelectWord<CR>
+" noremap ] :action EditorSelectWord<CR>
+" noremap [ :action EditorUnSelectWord<CR>
+
+nnoremap gu :action :cursive.actions.paredit/backward-up<CR>
+
+" imap <S-Enter> <Esc> :action :cursive.actions.paredit/backward-up<CR> VimMotionInnerBlockBrace<CR>
+nnoremap <S-Enter> a<CR>
+nnoremap <Enter> i<CR>
+"<CR> %a<CR>
 
 nnoremap <leader>y :action EditorCopy<CR>
 nnoremap <leader>p :action EditorPaste<CR>
+nnoremap <leader><Space> i<Space><Right><ESC>
 
 nnoremap g, :action Back<CR>
 nnoremap g. :action Forward<CR>
+
+nnoremap <C-;> /[{(\[\])}]<CR>a
+vnoremap <C-;> <Esc>/[{(\[\])}]<CR>a
+imap <C-;> <Esc>/[{(\[\])}]<CR>a
 
 nmap <leader>fs :action SaveDocument<CR>
 nmap <leader>fr :action RecentFiles<CR>
@@ -41,6 +71,8 @@ nnoremap <leader>cli :action Tool_External Tools_services-clean-install<CR>
 nnoremap <leader>rc" :action Macro.raise-current-sexp<CR>
 nnoremap <leader>rc' :action :cursive.actions.paredit/raise<CR>
 nnoremap <leader>rr :action RenameElement<CR>
+nnoremap <leader>ri :action ReformatCode<CR>
+
 
 nnoremap <leader>su :action FindUsages<CR>
 nnoremap <leader>sd :action GotoDeclaration<CR>
