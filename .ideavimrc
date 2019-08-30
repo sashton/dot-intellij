@@ -11,22 +11,28 @@ set backspace=indent,eol,start  " backspace over everything
 let mapleader = " "
 
 inoremap fj <Esc>`^
-inoremap jf <Esc>`^
-vnoremap jf <Esc>
+"inoremap jf <Esc>`^
+"vnoremap jf <Esc>
 vnoremap fj <Esc>
 "nnoremap fd <Esc>`^
 
 nnoremap <leader>vs :source ~/.ideavimrc<CR>
 nnoremap <leader>ve :e ~/.ideavimrc<CR>
 
-nnoremap <C-[> ?[{(\[\])}]<CR>
-vnoremap <C-[> ?[{(\[\])}]<CR>
-inoremap <C-[> x<C-c>"_x?[{(\[\])}]<CR>i
-nnoremap <C-]> /[{(\[\])}]<CR>
-vnoremap <C-]> /[{(\[\])}]<CR>
-inoremap <C-]> <Esc>/[{(\[\])}]<CR>a
-inoremap <C-i> <Esc>
-
+nmap <C-[> ?[{(\[\])}]<CR>
+vmap <C-[> ?[{(\[\])}]<CR>
+imap <C-[> <Esc><C-[>
+" inoremap <C-[> x<C-c>"_x?[{(\[\])}]<CR>i
+nmap <C-]> /[{(\[\])}]<CR>
+vmap <C-]> /[{(\[\])}]<CR>
+imap <C-]> <Esc><C-]>
+" inoremap <C-]> <Esc>/[{(\[\])}]<CR>a
+nmap <M-[> ?[{(\[\])}]<CR>
+vmap <M-[> ?[{(\[\])}]<CR>
+imap <M-[> <Esc><M-[>
+nmap <M-]> /[{(\[\])}]<CR>
+vmap <M-]> /[{(\[\])}]<CR>
+imap <M-]> <Esc><M-]>
 
 "Allow all window commands in insert mode without accidentally
 "deleting words
@@ -43,6 +49,11 @@ inoremap <S-Down> <C-O>:action EditorDownWithSelection<CR>
 " noremap ] :action EditorSelectWord<CR>
 " noremap [ :action EditorUnSelectWord<CR>
 
+" moving to top-level of form
+
+nmap [[ ?^(<CR>
+nmap ]] /^(<CR>
+
 nnoremap gu :action :cursive.actions.paredit/backward-up<CR>
 
 " imap <S-Enter> <Esc> :action :cursive.actions.paredit/backward-up<CR> VimMotionInnerBlockBrace<CR>
@@ -56,6 +67,8 @@ nnoremap <leader><Space> i<Space><Right><ESC>
 
 nnoremap g, :action Back<CR>
 nnoremap g. :action Forward<CR>
+
+nnoremap <tab> :action EditorIndentLineOrSelection<CR>
 
 nnoremap <C-;> /[{(\[\])}]<CR>a
 vnoremap <C-;> <Esc>/[{(\[\])}]<CR>a
@@ -78,9 +91,13 @@ nnoremap <leader>su :action FindUsages<CR>
 nnoremap <leader>sd :action GotoDeclaration<CR>
 nnoremap <leader>ss :action FileStructurePopup<CR>
 nnoremap <leader>se :action SearchEverywhere<cr>
+nnoremap <leader>sk :action GotoKeyword<cr>
 
 nnoremap <leader>wc :action CloseEditor<CR>
 
+nnoremap <leader>pr :action Cursive.Repl.Command.run-saved-form<CR>
+nnoremap <leader>psl :action Cursive.Repl.Command.save-letscope-form<CR>
+nnoremap <leader>psf :action Cursive.Repl.Command.save-form<CR>
 
 nnoremap <leader>crl :action :cursive.repl.actions/load-file<CR>
 nnoremap <leader>crc :action :cursive.repl.actions/clear-repl<CR>
@@ -90,4 +107,5 @@ nnoremap <leader>ctt :action :cursive.testing.actions/run-single-test<CR>
 nnoremap <leader>ctr :action :cursive.testing.actions/rerun-last-test<CR>
 
 noremap <m-y> :action Cursive.Repl.Command.hello command<CR>
+
 
